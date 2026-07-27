@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #f9fafb; color: #0f172a; }
+* { box-sizing: border-box; }
+button, a { -webkit-tap-highlight-color: transparent; }
+
+.hero-grid {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(148, 163, 184, 0.055) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(to bottom, black 65%, transparent 100%);
+}
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.19), rgba(16, 185, 129, 0.07) 42%, transparent 70%);
+}
